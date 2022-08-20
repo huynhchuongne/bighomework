@@ -1,0 +1,269 @@
+:root{
+ --gb:red;
+}
+*{
+    box-sizing: border-box !important;
+}
+ .secion__main__first__image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100vh;
+    position:relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+.secion__main__first__image::before{
+    content:"";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/first_background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -3;
+    animation: bigger 10s infinite;
+}
+@keyframes bigger{
+    0%,100%{   
+     transform: scale(1)
+    }
+    50%{
+        transform: scale(1.08);
+    }
+}
+.secion__main__first__image::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.27;
+    z-index: -2;
+}
+.first__image-contant{
+    text-align: center;
+    color:rgb(235, 231, 46);
+}
+.first__image-contant>h2{
+    font-size: 4rem;
+    margin-bottom:0;
+}
+.first__image-contant>p{
+    font-size: 2.5rem;
+}
+.first__image-contant-btn{
+    display: flex;
+    justify-content: center;
+}
+.first__image-contant-btn-a{
+    display: block;
+    width:20%;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid rgb(235, 231, 46);
+    background-color: transparent;
+    border-radius: 20px;
+    font-size: 2rem;
+    color:rgb(231, 247, 56);
+}
+.first__image-contant-btn-a:hover{
+    background-color: rgb(77, 20, 20);
+    color:orange;
+} 
+.section__main__row__after-content{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    align-items:center;
+    
+}
+.section__main__row__after-content-right-setimg{
+    width:100%;
+    height:100%;
+    background-color: red;
+}
+ div.section__main__row__after-content-right-setimg > img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin:0;
+    outline: 0;
+  
+}
+.section__main__row__after-content-right{
+    width: 40%; 
+    height:100%;
+    margin:0;
+    padding:40px;
+    border: 0;
+    outline: 0;
+}
+.section__main__row__after-content-left{
+    width: 60%;
+    height:100%;
+    font-size:2.5rem ;
+    margin-left:100px;
+    margin-top: 50px;
+}
+.section__main__row__after-content-left>a{
+    text-decoration: none;
+}
+.section__main__row__after-content-left>a>h2{
+    margin:0 0 10px 0;  
+    color:rgb(232, 232, 81);
+}
+.section__main__row__after-content-left>p{
+    margin:0;
+    padding:5px;
+    
+}
+.section__main__row__after-content-left>a:hover{
+    color:brown;
+}
+.main-content-1{
+    background-color:#642a0d;
+}
+.main-content-2{
+    background-color: green;
+}
+.main-content-3{
+    background-color: rgb(11, 107, 148);
+}
+.main-content-4{
+        background-color: rgb(105, 105, 105);
+}
+.section_main_find-more{
+    border: 1.5px solid rgb(54, 223, 232);
+    width:30%;
+    padding:2px;
+    margin: 0;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 2rem;
+}
+.section_main_find-more >a{
+    text-decoration: none;
+}
+.section_main_find-more:hover{
+    background: rgb(233, 228, 130);
+    color:white;
+}
+@media screen and (max-width:450px) {
+    .first__image-contant-btn-a {
+        display: block;
+        width: 35%;
+        text-decoration: none;
+        text-align: center;
+        border: 1px solid rgb(235, 231, 46);
+        background-color: transparent;
+        border-radius: 20px;
+        font-size: 2rem;
+        color: rgb(231, 247, 56);
+    }
+    .section__main__row__after-content-left>a {
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+    .section__main__row__after-content-left {
+        width: 100%;
+        height: 100%;   
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+    .section__main__row__after-content-right {
+        display:none;
+    }
+    .section_main_find-more {
+        border: 1.5px solid rgb(54, 223, 232);
+        width: 56%;
+        padding: 2px;
+        margin: 0;
+        text-align: center;
+        border-radius: 15px;
+        font-size: 1.75rem;
+    }
+    .section__main__row__after-content-left>p {
+        font-size:1.8rem ;
+        margin: 0;
+        padding: 5px;
+        text-align:justify; 
+    }
+    .section__main__row__after-content {
+        display: flex;
+        width: 100%;
+        height: 280px;
+        padding: 0;
+        margin: 0;
+        outline: 0;
+        align-items: center;
+    }
+    .first__image-contant>h2 {
+        font-size: 2rem;
+        margin-bottom: 0;
+    }
+    .first__image-contant>p {
+        font-size: 1.5rem;
+    }
+    .first__image-contant-btn-a {
+        font-size: 1.25rem;
+    }
+    .secion__main__first__image {
+        height: 35vh;
+    }
+}
+@media screen and (max-width:950px) and (min-width:451px) {
+    .section__main__row__after-content-left>p {
+        font-size:35px;
+        padding: 5px;
+        text-align: justify;
+    }
+    .section_main_find-more {
+        border: 1.5px solid rgb(54, 223, 232);
+        width: 55%;
+        padding: 2px;
+        margin: 0;
+        text-align: center;
+        border-radius: 15px;
+        font-size: 2rem;
+    }
+    .section__main__row__after-content-left {
+        width: 60%;
+        height: 100%;
+        font-size: 2.5rem;
+        margin-left: 39px;
+        margin-top: 50px;
+    }
+    .secion__main__first__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 60vh;
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+    }
+    .section__main__row__after-content {
+        height: 350px;
+    }
+}
+.section__main__row__after-content-right-setimg{
+    overflow: hidden;
+}
+.section__main__row__after-content-right-setimg img{
+    transition: transform 2s;
+}
+.section__main__row__after-content-right-setimg img:hover{
+    transform: scale(1.1);
+}
