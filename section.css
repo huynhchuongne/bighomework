@@ -218,7 +218,7 @@
         font-size: 1.25rem;
     }
     .secion__main__first__image {
-        height: 35vh;
+        height: 35vh;   
     }
 }
 @media screen and (max-width:950px) and (min-width:451px) {

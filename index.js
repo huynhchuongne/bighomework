@@ -18,4 +18,23 @@ function init() {
     two.style.display = "none";
     one.style.display = "inline-block";
   };
+  var bgcstoreme = document.getElementsByTagName("body");
+  var bgcsBtnme = document.getElementById("ccbgBtnme");
+  bgcsBtnme.addEventListener("click", function () {
+    setTimeout(function () {
+      if (bgcsBtnme.innerText == "off") {
+        bgcsBtnme.innerText = "on";
+        for (var i = 0; i <= bgcstoreme.length; i++) {
+          bgcstoreme[i].style.backgroundColor = "black";
+          bgcstoreme[i].style.color = "white";
+        }
+      } else if (bgcsBtnme.innerText == "on") {
+        bgcsBtnme.innerText = "off";
+        for (var c = 0; c <= bgcstoreme.length; c++) {
+          bgcstoreme[c].style.backgroundColor = "white";
+          bgcstoreme[c].style.color = "black";
+        }
+      }
+    });
+  });
 }

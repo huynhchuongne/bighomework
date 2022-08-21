@@ -25,7 +25,7 @@
     <script src="gotop.js"></script>
     <script src="index.js"></script>
   </head>
-  <body>
+  <body onload="init()">
     <button id="gotop"><i class="fa-solid fa-arrow-up"></i></button>
     <header>
       <div class="aheader">
@@ -59,20 +59,17 @@
                 type="text"
                 placeholder="Tìm kiếm..."
               />
-              <div class="nav__search-select">
-                <span class="nav__search-select-label">Tất cả</span>
+              <div class="nav__search-select" id="select-s">
+                <span class="nav__search-select-label" id="ssee">Tất cả</span>
                 <i class="nav__search-select-icon fa-solid fa-angle-down"></i>
-
                 <ul class="nav_search-option">
-                  <li
-                    class="nav_search-option-item nav_search-option-item--active"
-                  >
-                    <span>Tất cả </span>
-                    <i class="fas fa-check"></i>
+                  <li class="nav_search-option-item" id="sone">
+                    <span id="li-one">Tất cả </span>
+                    <i class="fas fa-check" id="one"></i>
                   </li>
-                  <li class="nav_search-option-item">
-                    <span>Đã tìm </span>
-                    <i class="fas fa-check"></i>
+                  <li class="nav_search-option-item" id="stwo">
+                    <span id="li-two">Đã tìm </span>
+                    <i class="fas fa-check" id="two"></i>
                   </li>
                 </ul>
               </div>
@@ -212,7 +209,7 @@
                   </li>
                 </ul>
               </li>
-              <li class="sup"><a href="#">Cửa hàng</a></li>
+              <li class="sup"><a href="store.html">Cửa hàng</a></li>
               <li class="sup"><a href="#">Tuyển dụng</a></li>
               <li class="sup"><a href="feedback.html">Đánh giá</a></li>
             </ul>

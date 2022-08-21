@@ -22,7 +22,7 @@ a.menu__item-bigleft{
     padding:0;
     outline:0;
 }
-.menu__main__coffee{
+/* .menu__main__coffee{
     background-color: rgb(142, 217, 217);
 }
 .menu__main__tea{
@@ -36,7 +36,7 @@ a.menu__item-bigleft{
 .menu__main__cake{
     background-color: chartreuse;
     width: 100%;
-}
+} */
 .menu__main__firstline{
 margin: 0;
 height: 80px;
@@ -83,7 +83,7 @@ padding:20px;
     border:0;
     outline: 0;
     text-align: center;
-    background-color:white;
+    background-color:rgb(58, 189, 241);
 }
 .coffee-item-para-descri{
     padding:0;
@@ -168,7 +168,7 @@ padding:20px;
     border:0;
     outline: 0;
     text-align: center;
-    background-color:white;
+    background-color:rgb(58, 189, 241);
 }
 .menu__main__freeze-item >div> img{
     display: block;
@@ -200,7 +200,7 @@ padding:20px;
     border:0;
     outline: 0;
     text-align: center;
-    background-color:rgb(195, 113, 12);
+    background-color:rgb(58, 189, 241);
 }
 .frezze-item-para-descri{
     padding:0;
@@ -257,7 +257,6 @@ padding:20px;
         border: 0;
         outline: 0;
         text-align: center;
-        background-color: white;
     }
     .coffee-item-img {
         width: 100%;
@@ -285,7 +284,6 @@ padding:20px;
         border: 0;
         outline: 0;
         text-align: center;
-        background-color: white;
     }
     .freeze-item-img {
         width: 100%;
@@ -355,7 +353,6 @@ padding:20px;
         border: 0;
         outline: 0;
         text-align: center;
-        background-color: white;
     }
     .coffee-item-img {
         width: 100%;
@@ -383,7 +380,6 @@ padding:20px;
         border: 0;
         outline: 0;
         text-align: center;
-        background-color: white;
     }
     .freeze-item-img {
         width: 100%;
@@ -402,7 +398,6 @@ padding:20px;
         border: 0;
         outline: 0;
         text-align: center;
-        background-color: rgb(195, 113, 12);
     }
     .menu__main__freeze-item {
         position: relative;
@@ -427,3 +422,28 @@ padding:20px;
         outline: 0;
     }
 }
+.top-storeme div{
+    margin-left:auto;
+    display: flex;
+    padding: 3px;
+    vertical-align:bottom;
+  }
+  .top-storeme{
+   display:flex;
+    margin:10px;
+    position: relative;
+  }
+  #ccbgtextme{
+    height: 30px;
+    text-align: center;
+    vertical-align: bottom;
+    padding-top: 7px;
+    margin-right: 5px;
+  }
+  #ccbgBtnme{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid orange;
+    text-align: center;
+  }
