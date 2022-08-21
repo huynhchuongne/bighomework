@@ -341,4 +341,24 @@ window.addEventListener("load", function () {
       sliderMain7.style = `transform: translateX(${positionX7}px)`;
     }
   }
+
+  var bgcstore = document.getElementsByTagName("body");
+  var bgcsBtn = document.getElementById("ccbgBtn");
+  bgcsBtn.addEventListener("click", function () {
+    setTimeout(function () {
+      if (bgcsBtn.innerText == "off") {
+        bgcsBtn.innerText = "on";
+        for (var i = 0; i <= bgcstore.length; i++) {
+          bgcstore[i].style.backgroundColor = "black";
+          bgcstore[i].style.color = "white";
+        }
+      } else if (bgcsBtn.innerText == "on") {
+        bgcsBtn.innerText = "off";
+        for (var c = 0; c <= bgcstore.length; c++) {
+          bgcstore[c].style.backgroundColor = "white";
+          bgcstore[c].style.color = "black";
+        }
+      }
+    });
+  });
 });

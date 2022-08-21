@@ -79,7 +79,7 @@ div.store_first-items {
 
 .item-map-btn>a {
   width: 40%;
-  background: linear-gradient(rgb(176, 83, 62), rgb(209, 115, 56));
+  background-color: rgba(177, 72, 11, 0.851);
   display: block;
   color: rgb(0, 0, 0);
   text-decoration: none;
@@ -88,7 +88,10 @@ div.store_first-items {
   border-radius: 5px;
   border: 1px solid rgb(241, 251, 95)
 }
+.item-map-btn>a:hover{
+  background-color: rgb(233, 208, 71);
 
+}
 .store__item-share a {
   color: black;
 }
@@ -143,12 +146,6 @@ img {
   max-width: 100%;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  line-height: 1;
-  padding: 25px;
-}
 
 .slider {
   height: 100%;
@@ -668,6 +665,60 @@ body {
 .slider-item7 img {
   transition: transform 2s;
 }
+
+@media screen  and (max-width:450px){
+  .store__item {
+    margin-top: 20px;
+    width: 95%;
+    height: 76vh;
+    border: 3px solid transparent;
+    margin: 30px;
+    margin-bottom: 50px;
+}
+}
+@media screen and (max-width:950px) and (min-width:451px) {
+  .store__item {
+    margin-top: 20px;
+    width: 40%;
+    height: 50vh;
+    border: 3px solid transparent;
+    margin: 30px;
+    margin-bottom: 50px;
+}
+}
+.top-store div{
+  margin-left:auto;
+  display: flex;
+  padding: 3px;
+  vertical-align:bottom;
+}
+.top-store{
+ display:flex;
+  margin:10px;
+  position: relative;
+}
+#ccbgtext{
+  height: 30px;
+  text-align: center;
+  vertical-align: bottom;
+  padding-top: 7px;
+  margin-right: 5px;
+}
+#ccbgBtn{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid orange;
+  text-align: center;
+}
+.store__item-share {
+  color:black;
+}
+.store__item-share a:hover{
+  color: brown;
+}
+
+
 
 
 
