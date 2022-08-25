@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team coffee</title>
+    <link rel="stylesheet" href="picture.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="gotop.js"></script>
+    <script src="index.js"></script>
+    <link href="images/teamcf.png" rel="sortcut icon" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="fb.css" />
+    <link href="section.css" rel="stylesheet" />
+  </head>
+
+  <body onload="init()">
+    <button id="gotop"><i class="fa-solid fa-arrow-up"></i></button>
+    <header>
+        <div class="aheader">
+          <ul class="flex space_bet">
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-shop"></i> 8 cửa hàng trong TP.Hồ Chí
+                Minh</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-headset"></i> Liên hệ đặt hàng: 1900
+                9999</a
+              >
+            </li>
+            <li>
+              <a href="#"> <i class="fa-solid fa-piggy-bank"></i> Ưu đãi</a>
+            </li>
+          </ul>
+        </div>
+        <nav class="bheader flex">
+          <div class="bheader__left">
+            <img src="images/teamcf.png" alt="logo" />
+          </div>
+          <div class="bheader__right">
+            <div class="top_of_nav flex">
+              <div class="nav__search">
+                <input
+                  class="nav__search-input"
+                  type="text"
+                  placeholder="Tìm kiếm..."
+                />
+                <div class="nav__search-select" id="select-s">
+                  <span class="nav__search-select-label" id="ssee">Tất cả</span>
+                  <i class="nav__search-select-icon fa-solid fa-angle-down"></i>
+                  <ul class="nav_search-option">
+                    <li class="nav_search-option-item" id="sone">
+                      <span id="li-one">Tất cả </span>
+                      <i class="fas fa-check" id="one"></i>
+                    </li>
+                    <li class="nav_search-option-item" id="stwo">
+                      <span id="li-two">Đã tìm </span>
+                      <i class="fas fa-check" id="two"></i>
+                    </li>
+                  </ul>
+                </div>
+                <button class="nav__saerch-button">
+                  <i
+                    class="nav__saerch-button-icon fa-solid fa-magnifying-glass"
+                  ></i>
+                </button>
+              </div>
+            </div>
+            <div class="bot_of_nav">
+              <ul class="nav flex">
+                <li class="sup">
+                  <a href="#">Cà phê</a>
+                  <ul class="supcontent">
+                    <li>
+                      <ul>
+                        <li><h1>Cà phê của chúng tôi</h1></li>
+                        <li>
+                          <a href="#">Cà phê nguyên chất</a>
+                        </li>
+                        <li>
+                          <a href="#">Cà phê đã qua chế biến</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul>
+                        <li><h1>Epresso</h1></li>
+                        <li><a href="#">Thành phần</a></li>
+                        <li><a href="#">Các pha chế</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul>
+                        <li><h1>Tìm hiểu thêm</h1></li>
+                        <li><a href="#">Lịch sử cà phê</a></li>
+                        <li><a href="#">Dòng sản phẩm</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sup">
+                  <a href="menu.html">Menu</a>
+                  <ul class="supcontent">
+                    <li>
+                      <ul>
+                        <li><h1>Cà phê</h1></li>
+                        <li>
+                          <a href="#">Cà phê phin</a>
+                        </li>
+                        <li>
+                          <a href="#">Arabica</a>
+                        </li>
+                        <li>
+                          <a href="#">Expresso</a>
+                        </li>
+                        <li>
+                          <a href="#">Cappuchino</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul>
+                        <li><h1>Trà</h1></li>
+                        <li><a href="#">Trà trái cây</a></li>
+                        <li><a href="#">Trà sữa</a></li>
+                        <li><a href="#">Macchiano</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul>
+                        <li><h1>Freeze</h1></li>
+                        <li><a href="#">Frezze cà phê</a></li>
+                        <li>
+                          <a href="#">Freeze không cà phê</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul>
+                        <li><h1>Bánh và Snack</h1></li>
+                        <li><a href="#">Bánh mặn</a></li>
+                        <li><a href="#">Bánh ngọt</a></li>
+                        <li><a href="#">Snack</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sup">
+                  <a href="#">Về chúng tôi</a>
+                  <ul class="supcontent">
+                    <li>
+                      <ul>
+                        <li><h1>Di sản</h1></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul>
+                        <li><h1>Dịch vụ khách hàng</h1></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul>
+                        <li><h1>Công ty</h1></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul>
+                        <li><h1>Nghề nghị</h1></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sup">
+                  <a href="#">Trách nhiệm</a>
+                  <ul class="supcontent not-jus">
+                    <li>
+                      <ul>
+                        <li><h1>Tìm nguồn cung ứng có Đạo đức</h1></li>
+                        <li><a href="#">Hỗ trợ nông dân</a></li>
+                        <li><a href="#">Tìm nguồn cung ứng cà phê</a></li>
+                        <li>
+                          <a href="#">Tìm nguồn cung ứng nguyên liệu khác</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <ul>
+                        <li><h1>Môi trường</h1></li>
+                        <li><a href="#">Tái chế</a></li>
+                        <li><a href="#">Năng lượng</a></li>
+                        <li><a href="#">nước</a></li>
+                        <li><a href="#">nước</a></li>
+                        <li><a href="#">công trình xanh</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sup"><a href="#">Cửa hàng</a></li>
+                <li class="sup"><a href="#">Tuyển dụng</a></li>
+                <li class="sup"><a href="feedback.html">Đánh giá</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+    <section>
+      <div class="name">
+        <p>Drink</p>
+      </div>
+
+      <div class="gallery">
+        <div class="gallery-imgs">
+          <img src="/img/cafe-1.jpg" alt="images" />
+        </div>
+        <div class="gallery-imgs">
+          <img src="/img/cafe-2.jpg" alt="images" />
+        </div>
+        <div class="gallery-imgs">
+          <img src="/img/cafe-3.jpg" alt="images" />
+        </div>
+        <div class="gallery-imgs">
+          <img src="/img/cafe-4.jpg" alt="images" />
+        </div>
+        <div class="gallery-imgs">
+          <img src="/img/cafe-5.jpg" alt="images" />
+        </div>
+        <div class="gallery-imgs">
+          <img src="/img/cafe-6.jpg" alt="images" />
+        </div>
+        <div class="gallery-imgs">
+          <img src="/img/juice-2.jpg" alt="images" />
+        </div>
+        <div class="gallery-imgs">
+          <img src="/img/juice-1.jpg" alt="images" />
+        </div>
+        <div class="gallery-imgs">
+          <img src="/img/juice-3.jpg" alt="images" />
+        </div>
+        <div class="gallery-imgs">
+          <img src="/img/juice-4.jpg" alt="images" />
+        </div>
+        <div class="gallery-imgs">
+          <img src="/img/juice-6.jpg" alt="images" />
+        </div>
+        <div class="gallery-imgs">
+          <img src="/img/juice-5.jpg" alt="images" />
+        </div>
+        <div class="gallery-imgs">
+          <img src="/img/soda-1.jpg" alt="images" />
+        </div>
+        <div class="gallery-imgs">
+          <img src="/img/soda-3.jpeg" alt="images" />
+        </div>
+        <div class="gallery-imgs">
+          <img src="/img/soda-2.jpg" alt="images" />
+        </div>
+        <div class="gallery-imgs">
+          <img src="/img/juice-7.jpg" alt="images" />
+        </div>
+        <div class="gallery-imgs">
+          <img src="/img/soda-4.jpg" alt="images" />
+        </div>
+      </div>
+
+      <div class="name">
+        <p>Food</p>
+      </div>
+
+      <div class="gallery">
+        <div class="gallery-imgs">
+          <img src="/img/food-1.jpg" alt="images" />
+        </div>
+        <div class="gallery-imgs">
+          <img src="/img/food-2.jpg" alt="images" />
+        </div>
+        <div class="gallery-imgs">
+          <img src="/img/food-3.jpg" alt="images" />
+        </div>
+        <div class="gallery-imgs">
+          <img src="/img/food-5.jpg" alt="images" />
+        </div>
+        <div class="gallery-imgs">
+          <img src="/img/food-4.png" alt="images" />
+        </div>
+        <div class="gallery-imgs">
+          <img src="/img/food-6.jpg" alt="images" />
+        </div>
+        <div class="gallery-imgs">
+          <img src="/img/food-7.jpeg" alt="images" />
+        </div>
+      </div>
+
+      <div class="cover">
+        <i class="fa-solid fa-circle-xmark close"></i>
+        <div class="gallery_inner">
+          <img src="/img/cafe-1.jpg" alt="" />
+        </div>
+        <div class="control previous">
+          <i class="fa-solid fa-circle-chevron-left"></i>
+        </div>
+        <div class="control next">
+          <i class="fa-solid fa-circle-chevron-right"></i>
+        </div>
+      </div>
+    </section>
+
+    <script src="picture.js"></script>
+    <footer>
+        <div>
+        <div class="ft flex space_bet">
+          <div class="f1">
+            <h1>Giới thiệu</h1>
+            <ul>
+              <li><a href="#">Về chúng tôi</a></li>
+              <li><a href="#">Sản phẩm</a></li>
+              <li><a href="#">Cửa hàng</a></li>
+              <li><a href="#">Tuyển dụng</a></li>
+            </ul>
+          </div>
+          <div class="f2">
+            <h1>Điều khoản</h1>
+            <ul>
+              <li><a href="#">Điều khoản sử dụng</a></li>
+              <li><a href="#">Quy tắc bảo mật</a></li>
+            </ul>
+          </div>
+          <div class="f3">
+            <h1>Đặt hàng:<span><a href="#"> 1900 9999</a></span></h1>
+           <h2>Liên hệ</h1>
+          <p>Tòa A số 99 Nguyễn Kiệm, Phường 3, Gò Vấp<br>, TP.Hồ Chí Minh</p>
+          </div>
+        </div>
+      </div>
+      <div class="fbot flex">
+        <div>
+        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      </footer>
+  </body>
+</html>

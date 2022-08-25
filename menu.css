@@ -8,7 +8,6 @@ a.menu__item_link {
     text-decoration: none;
     display: block;
     width:25%;
-    /* height:100%; */
     margin:0;
     padding:0;
     outline:0;
@@ -22,21 +21,6 @@ a.menu__item-bigleft{
     padding:0;
     outline:0;
 }
-/* .menu__main__coffee{
-    background-color: rgb(142, 217, 217);
-}
-.menu__main__tea{
-    background-color: blue;
-    width: 100%;
-}
-.menu__main__freeze{
-    background-color: blueviolet;
-    width: 100%;    
-}
-.menu__main__cake{
-    background-color: chartreuse;
-    width: 100%;
-} */
 .menu__main__firstline{
 margin: 0;
 height: 80px;
@@ -446,4 +430,24 @@ padding:20px;
     border-radius: 50%;
     border: 1px solid orange;
     text-align: center;
+  }
+  .menu__lastchoicen div{
+    display: flex;
+    justify-content: center;
+  }
+  .menu__lasthoicen{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding:20px;
+  }
+  #themxemme{
+    display: block;
+    width: 150px;
+    height:30px;
+    background-color: rgba(29, 224, 227, 0.495);
+    border-radius: 15px;
+    text-align: center;
+    padding:5px;
+    text-decoration: none;
   }
